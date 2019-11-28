@@ -1,0 +1,137 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Hodsite.master.cs" Inherits="RB.Hodsite" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>HOD Home Page</title>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            
+        }
+        .auto-style2 {
+            width: 155px;
+        }
+        .auto-style3 {
+            width: 622px;
+            position: relative;
+            z-index: auto;
+        }
+        .auto-style4 {
+            width: 113px;
+        }
+        .auto-style6 {
+            
+            width: 622px;
+        }
+        .auto-style7 {
+            
+           
+            background-color:#FFCC00;
+            left: 0px;
+            top: 114px;
+        }
+        </style>
+    <link href="bootstrap.css" rel="stylesheet" />
+</head>
+<body style="height: 100%">
+    <form id="form1" runat="server">
+       
+         <table class="auto-style1" style="border-spacing: 0px; border-collapse: collapse">
+        
+        <tr style="border-bottom:inset; border-bottom-width: thin; border-bottom-color: #000000; height:15%">
+           <td style="background-color:#070b4a">
+               <div class="jumbotron-fluid">
+                   <div class="form-row">
+                   <asp:Image ID="Image1" ImageUrl="~/logo1.PNG" runat="server" /><%--<h1 class="display-2">GNKC</h1><h6 >Result Builder</h6>--%>
+                       </div>
+               </div>
+           </td>
+          <%--  <td class="auto-style2" >&nbsp;</td>
+            <td class="auto-style3" style="font-family: 'Bahnschrift SemiBold SemiConden'; font-size: 95px; font-weight: normal; font-style: oblique; font-variant: inherit; color: #000000; padding: inherit; ">Result Builder</td>
+            <td class="auto-style4" style="position: relative; text-align:right; padding-right: 20px;" >
+                <asp:Button ID="btn_logout" runat="server" OnClick="LogOut" Text="Logout" CssClass="btn btn-primary"  />
+            </td>--%>
+        </tr>
+        
+        <tr>
+            <td class="auto-style7" style="border-style: inset; height:50px" colspan="3">
+                
+                <nav class="navbar navbar-expand-lg navbar-light " style="background-color:#FFCC00">
+  <a class="navbar-brand" href="#"></a>
+  
+
+  <div class="collapse navbar-collapse" id="navbarColor02">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item ">
+        <a class="nav-link text-dark" href="hodHome.aspx"><strong>Home</strong> <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-dark" href="HodClasses.aspx"><strong>Classes</strong></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-dark" href="teachers.aspx"><strong>Teachers</strong></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-dark" href="students.aspx"><strong>Students</strong></a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link text-dark" href="WebForm7.aspx"><strong>New Item</strong></a>
+      </li>
+    </ul>
+    <div class="form-inline my-2 my-lg-0">
+      
+      <asp:Button runat="server" Text="Logout" OnClick="LogOut" class="btn btn-primary my-2 my-sm-0" type="submit" />
+    </div>
+  </div>
+</nav>
+
+          <%--      <asp:Menu ID="Menu1" runat="server"  ForeColor="Black" StaticDisplayLevels="1" Font-Bold="False" Font-Italic="False" Font-Underline="True"  Orientation="Horizontal">
+        
+        
+        
+    <Items>
+        <asp:MenuItem NavigateUrl="~/hodHome.aspx" Text="Home" Value="Home"></asp:MenuItem>
+        <asp:MenuItem Text="Classes" Value="Classes" NavigateUrl="~/HodClasses.aspx">
+            
+        </asp:MenuItem>
+        <asp:MenuItem Text="Teachers" Value="Teachers" NavigateUrl="~/teachers.aspx">
+            
+        </asp:MenuItem>
+        <asp:MenuItem NavigateUrl="~/students.aspx" Text="Students" Value="Students"></asp:MenuItem>
+        <asp:MenuItem NavigateUrl="~/WebForm7.aspx" Text="New Item" Value="New Item"></asp:MenuItem>
+    </Items>
+    <StaticHoverStyle BorderStyle="Inset" Font-Bold="True" Font-Names="Arial Black" Font-Overline="False"  BorderWidth="1px"/>
+
+<StaticMenuItemStyle HorizontalPadding="70px" VerticalPadding="2px"></StaticMenuItemStyle>
+        <StaticSelectedStyle Font-Bold="True" Font-Overline="False" Font-Underline="True" />
+</asp:Menu>--%>
+                
+            </td>
+            </tr>
+             <tr style="position: relative; padding-bottom: 70px ; height:80%" >
+            <td class="auto-style6" colspan="3">
+
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    <p>
+                        &nbsp;</p>
+                    <p>
+                    </p>
+                </asp:ContentPlaceHolder>
+
+            </td>
+        </tr>
+
+        <tr style="height:5%">
+            <td colspan="3" style="background-color: #FFCC00; text-align:center; font-weight: bold; font-style: inherit;">
+               Copyright 2019 © Guru Nanak Khalsa College, Mumbai - All Rights Reserved
+                <br />
+Maintained by Jagannath Patta
+            </td>      
+        </tr>
+       </table>
+        
+    </form>
+</body>
+</html>
